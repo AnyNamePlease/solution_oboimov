@@ -5,7 +5,7 @@
 
 TEST(AggregationTest, EmptyInput) {
     std::vector<std::pair<int, int>> input;
-    auto result = AvgWithPartitioning(input);
+    auto result = AvgWithPartitioning(input, 8);
     EXPECT_TRUE(result.empty());
 }
 
